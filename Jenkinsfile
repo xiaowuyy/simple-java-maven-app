@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'while true; do sleep 10;done'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
     }
